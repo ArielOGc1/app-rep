@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-df_car= pd.read_csv('/Users/ariel/Desktop/proyecto_7/vehicles_us.csv')
+df_car= pd.read_csv('vehicles_us.csv')
 
 st.header('Vision de datos')
 df_car.dropna(subset= ['is_4wd', 'paint_color'], inplace=True)
